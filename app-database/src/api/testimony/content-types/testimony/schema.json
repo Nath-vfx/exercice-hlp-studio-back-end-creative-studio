@@ -4,7 +4,8 @@
   "info": {
     "singularName": "testimony",
     "pluralName": "testimonies",
-    "displayName": "Testimony"
+    "displayName": "Testimony",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,6 +26,11 @@
       "relation": "oneToOne",
       "target": "api::customer.customer",
       "inversedBy": "testimony"
+    },
+    "type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::type.type"
     }
   }
 }
